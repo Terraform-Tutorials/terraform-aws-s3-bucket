@@ -9,11 +9,11 @@ terraform {
   }
 }
 
-# Configure the AWS Provider
+# Configure the AWS Provider on this project.
 provider "aws" {
   shared_credentials_file = "/home/amaurybsouza/.aws"
-  profile                  = "devopsaws"
-  region = "us-east-1"
+  profile                 = "devopsaws"
+  region                  = "us-east-1"
 
   default_tags {
     tags = {
